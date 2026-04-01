@@ -21,42 +21,79 @@
 
 ### 1. Problem Definition
 
-The hospital wants to predict if a patient will come back to the hospital within 30 days. This helps doctors know which patients need more care.
+The goal is to build a model that predicts whether a patient admitted to the ER will be readmitted within 30 days. Doctors can use this prediction to identify high-risk patients and provide additional care.
 
 ### 2. Data Collection
 
-The hospital collects data such as patient age, illness, treatment, and past hospital visits.
+Data can be collected from hospital databases such as patient age, diagnosis, treatment history, length of hospital stay, and whether the patient was readmitted within 30 days.
 
 ### 3. EDA & Preprocessing
 
-Check the data for missing values or errors. Clean the data and prepare it so the model can use it.
+Analyze the data to find missing values, incorrect records, or duplicates. Clean the data and prepare it for machine learning models.
 
 ### 4. Model Training
 
-Train a model using the data. Start with a simple model so doctors can understand the results.
+Train different machine learning models and choose the one that performs best.
 
 ### 5. Evaluation
 
-Check if the model works well. Use metrics like precision and recall to see if the model correctly finds high-risk patients.
+Check if the model works well using test data. Use metrics like precision and recall to see if the model correctly identifies high-risk patients.
 
 ### 6. Deployment
 
-Add the model to the hospital system. When a patient comes in, the system shows the risk score.
+Integrate the model into the hospital system so doctors can see the patient's readmission risk.
 
 ### 7. Monitoring
 
-Check the model over time to make sure it still works well. Update the model if needed.
+Monitor the model regularly and retrain it if the performance decreases over time.
 
 ---
 
-# Exercise C: AI vs ML vs Deep Learning
+# Exercise C: AI vs ML vs Deep Learning Sorting
 
-| System                               | Type          | Explanation                                  |
-| ------------------------------------ | ------------- | -------------------------------------------- |
-| Chess engine with hand-written rules | Rule-based AI | The rules are written by humans.             |
-| Spam filter using random forest      | Classical ML  | The model learns from email data.            |
-| GPT-4 generating text                | Deep Learning | Uses a neural network trained on large data. |
-| Netflix recommendation system        | Classical ML  | Learns from user watching history.           |
-| Thermostat using time rules          | Rule-based AI | Follows rules set by humans.                 |
-| CNN detecting tumors in images       | Deep Learning | Neural network learns from medical images.   |
-| Decision tree for credit approval    | Classical ML  | Learns decision rules from past data.        |
+### 1. Chess Engine
+
+**Type:** Rule-based AI  
+**Explanation:** The rules and evaluation logic are written manually by humans.
+
+---
+
+### 2. Spam Filter (Random Forest)
+
+**Type:** Classical ML  
+**Explanation:** The model learns patterns from a large dataset of labeled emails.
+
+---
+
+### 3. GPT-4
+
+**Type:** Deep Learning  
+**Explanation:** It uses a large neural network trained on massive text data to generate responses.
+
+---
+
+### 4. Netflix Recommendation System
+
+**Type:** Classical ML  
+**Explanation:** It Learns from user watching history.
+
+---
+
+### 5. Thermostat with Time Rules
+
+**Type:** Rule-based AI  
+**Explanation:** The system follows predefined rules created by humans.
+
+---
+
+### 6. CNN for Tumor Detection
+
+**Type:** Deep Learning  
+**Explanation:** A convolutional neural network learns features from medical images.
+
+---
+
+### 7. Credit Card Approval (Decision Tree)
+
+**Type:** Classical ML  
+**Explanation:** Learns decision rules from past data.
