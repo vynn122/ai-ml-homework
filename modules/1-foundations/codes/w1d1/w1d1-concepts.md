@@ -51,49 +51,49 @@ Monitor the model regularly and retrain it if the performance decreases over tim
 
 # Exercise C: AI vs ML vs Deep Learning Sorting
 
-### 1. Chess Engine
+### 1. A chess engine that evaluates positions using a hand-crafted evaluation function
 
 **Type:** Rule-based AI  
 **Explanation:** The rules and evaluation logic are written manually by humans.
 
 ---
 
-### 2. Spam Filter (Random Forest)
+### 2. A spam filter trained on 10 million labeled emails using random forest
 
 **Type:** Classical ML  
 **Explanation:** The model learns patterns from a large dataset of labeled emails.
 
 ---
 
-### 3. GPT-4
+### 3. GPT-4 generating text responses
 
 **Type:** Deep Learning  
 **Explanation:** It uses a large neural network trained on massive text data to generate responses.
 
 ---
 
-### 4. Netflix Recommendation System
+### 4. Netflix's collaborative filtering recommendation engine
 
 **Type:** Classical ML  
 **Explanation:** It Learns from user watching history.
 
 ---
 
-### 5. Thermostat with Time Rules
+### 5. A thermostat that adjusts temperature based on time-of-day rules
 
 **Type:** Rule-based AI  
 **Explanation:** The system follows predefined rules created by humans.
 
 ---
 
-### 6. CNN for Tumor Detection
+### 6. A CNN that detects tumors in medical images
 
 **Type:** Deep Learning  
 **Explanation:** A convolutional neural network learns features from medical images.
 
 ---
 
-### 7. Credit Card Approval (Decision Tree)
+### 7. A decision tree that approves/rejects credit card applications based on features
 
 **Type:** Classical ML  
 **Explanation:** Learns decision rules from past data.
