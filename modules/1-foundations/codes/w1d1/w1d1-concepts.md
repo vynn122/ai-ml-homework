@@ -1,4 +1,4 @@
-# Week 1 Day 1 - Homework Assignment
+# Week 1 Day 1 - Homework
 
 ## Mapping the ML Universe
 
@@ -6,57 +6,57 @@
 
 # Exercise A: Classify Real-World ML Problems
 
-| Scenario                                            | Problem Type   | Input Features                                | Output                                       |
-| --------------------------------------------------- | -------------- | --------------------------------------------- | -------------------------------------------- |
-| Predict whether a loan applicant will default       | Classification | Credit score, annual income                   | Default / Not Default                        |
-| Forecast next month's energy consumption for a city | Regression     | Historical energy usage, temperature forecast | Predicted energy consumption (numeric value) |
-| Group customers by purchasing behavior              | Clustering     | Purchase frequency, average spending          | Customer groups/segments                     |
-| Detect fraudulent credit card transactions          | Classification | Transaction amount, location                  | Fraud / Not Fraud                            |
-| Generate product descriptions from an image         | Generative     | Product image, product category               | Generated product description text           |
-| Predict the severity (1–5) of a patient's condition | Classification | Vital signs, symptoms                         | Severity level (1–5)                         |
+| Scenario                                            | Problem Type   | Input Features                         | Output                 |
+| --------------------------------------------------- | -------------- | -------------------------------------- | ---------------------- |
+| Predict whether a loan applicant will default       | Classification | Credit score, income                   | Default or Not Default |
+| Forecast next month's energy consumption for a city | Regression     | Past energy usage, weather temperature | Amount of energy used  |
+| Group customers by purchasing behavior              | Clustering     | Purchase frequency, total spending     | Customer groups        |
+| Detect fraudulent credit card transactions          | Classification | Transaction amount, location           | Fraud or Not Fraud     |
+| Generate product descriptions from an image         | Generative     | Product image, product type            | Text description       |
+| Predict severity (1–5) of a patient's condition     | Classification | Heart rate, symptoms                   | Severity level (1–5)   |
 
 ---
 
-# Exercise B: Map the ML Lifecycle
+# Exercise B: ML Lifecycle
 
 ### 1. Problem Definition
 
-The hospital wants to predict which patients admitted to the ER are at high risk of being readmitted within 30 days. The goal is to help doctors identify high-risk patients early so they can provide additional care or monitoring to reduce readmissions.
+The hospital wants to predict if a patient will come back to the hospital within 30 days. This helps doctors know which patients need more care.
 
 ### 2. Data Collection
 
-The hospital can collect historical patient records such as age, medical history, diagnosis codes, treatments, medications, and previous admissions. Data from several years should be used to ensure enough examples of readmitted and non-readmitted patients.
+The hospital collects data such as patient age, illness, treatment, and past hospital visits.
 
 ### 3. EDA & Preprocessing
 
-Exploratory Data Analysis (EDA) would help identify missing values, inconsistencies, or outliers in the medical records. Categorical features such as diagnosis codes may need to be encoded into numerical form so they can be used by machine learning models.
+Check the data for missing values or errors. Clean the data and prepare it so the model can use it.
 
 ### 4. Model Training
 
-The team could start with simple and interpretable models such as logistic regression or decision trees. These models allow healthcare professionals to understand why the model predicts a patient as high-risk.
+Train a model using the data. Start with a simple model so doctors can understand the results.
 
 ### 5. Evaluation
 
-Accuracy alone may be misleading if only a small percentage of patients are readmitted. Metrics such as precision, recall, and F1-score would better measure how well the model identifies high-risk patients.
+Check if the model works well. Use metrics like precision and recall to see if the model correctly finds high-risk patients.
 
 ### 6. Deployment
 
-The model could be integrated into the hospital’s electronic health record system. When a patient is admitted to the ER, the system would generate a readmission risk score that doctors or nurses can review.
+Add the model to the hospital system. When a patient comes in, the system shows the risk score.
 
 ### 7. Monitoring
 
-The model’s performance should be monitored over time because patient populations and medical practices can change. If prediction accuracy decreases, the model may need to be retrained with newer data.
+Check the model over time to make sure it still works well. Update the model if needed.
 
 ---
 
-# Exercise C: AI vs ML vs Deep Learning Sorting
+# Exercise C: AI vs ML vs Deep Learning
 
-| System                                                                 | Type          | Explanation                                                                                     |
-| ---------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------------------------------- |
-| A chess engine with hand-crafted evaluation function                   | Rule-based AI | The rules and evaluation logic are manually programmed by humans rather than learned from data. |
-| A spam filter trained on 10 million labeled emails using random forest | Classical ML  | The model learns patterns from labeled email data using a machine learning algorithm.           |
-| GPT-4 generating text responses                                        | Deep Learning | It uses large neural networks trained on massive text data to generate human-like responses.    |
-| Netflix collaborative filtering recommendation engine                  | Classical ML  | It learns user preferences from historical interaction data using mathematical models.          |
-| A thermostat that adjusts temperature based on time-of-day rules       | Rule-based AI | The system follows predefined rules created by humans instead of learning from data.            |
-| A CNN that detects tumors in medical images                            | Deep Learning | Convolutional neural networks automatically learn image features from large datasets.           |
-| A decision tree approving/rejecting credit card applications           | Classical ML  | The decision tree learns patterns from historical application data to make decisions.           |
+| System                               | Type          | Explanation                                  |
+| ------------------------------------ | ------------- | -------------------------------------------- |
+| Chess engine with hand-written rules | Rule-based AI | The rules are written by humans.             |
+| Spam filter using random forest      | Classical ML  | The model learns from email data.            |
+| GPT-4 generating text                | Deep Learning | Uses a neural network trained on large data. |
+| Netflix recommendation system        | Classical ML  | Learns from user watching history.           |
+| Thermostat using time rules          | Rule-based AI | Follows rules set by humans.                 |
+| CNN detecting tumors in images       | Deep Learning | Neural network learns from medical images.   |
+| Decision tree for credit approval    | Classical ML  | Learns decision rules from past data.        |
